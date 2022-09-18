@@ -125,7 +125,7 @@ while True:
 
     sleep(120)
     reset += 60
-    if reset % (60 * 60 * 24) == 0:
+    if reset == (60 * 60):
         reset = 0
         with open("logs", "w") as f:
             json.dump({"logs": []}, f, indent=4)
