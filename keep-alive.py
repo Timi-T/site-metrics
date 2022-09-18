@@ -123,9 +123,9 @@ while True:
 
     """ * ============= END =============== """
 
-    sleep(120)
+    sleep(180)
     reset += 60
-    if reset == (60 * 60):
+    if reset == (60 * 60 * 2):
         reset = 0
         with open("logs", "w") as f:
             json.dump({"logs": []}, f, indent=4)
